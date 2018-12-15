@@ -8,7 +8,7 @@ namespace BooKManagement
 {
     static class Program
     {
-        /// <summary>
+        /// <summary>aaaaaaa
         /// アプリケーションのメイン エントリ ポイントです。
         /// </summary>
         [STAThread]
