@@ -12,3 +12,17 @@ C:\Users\Administrator\source\repos\SkillLearning\MicroCalculator\obj\Debug\Calc
 C:\Users\Administrator\source\repos\SkillLearning\MicroCalculator\obj\Debug\Calculator.exe
 C:\Users\Administrator\source\repos\SkillLearning\MicroCalculator\obj\Debug\Calculator.pdb
 C:\Users\Administrator\source\repos\SkillLearning\MicroCalculator\obj\Debug\MicroCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\tlslttlslt\StudyMakesMeHappy\MicroCalculator\obj\Debug\Calculator.exe
+C:\Users\Administrator\Source\Repos\tlslttlslt\StudyMakesMeHappy\MicroCalculator\obj\Debug\Calculator.pdb
+C:\Users\Administrator\Source\Repos\tlslttlslt\StudyMakesMeHappy\MicroCalculator\obj\Debug\MicroCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\tlslttlslt\StudyMakesMeHappy\MicroCalculator\obj\Debug\Calculator.frmCalculator.resources
+C:\Users\Administrator\Source\Repos\tlslttlslt\StudyMakesMeHappy\MicroCalculator\obj\Debug\MicroCalculator.csproj.GenerateResource.Cache
+C:\Users\Administrator\Source\Repos\tlslttlslt\StudyMakesMeHappy\MicroCalculator\bin\Debug\Calculator.exe.config
+C:\Users\Administrator\Source\Repos\tlslttlslt\StudyMakesMeHappy\MicroCalculator\bin\Debug\Calculator.exe.manifest
+C:\Users\Administrator\Source\Repos\tlslttlslt\StudyMakesMeHappy\MicroCalculator\bin\Debug\Calculator.application
+C:\Users\Administrator\Source\Repos\tlslttlslt\StudyMakesMeHappy\MicroCalculator\bin\Debug\Calculator.exe
+C:\Users\Administrator\Source\Repos\tlslttlslt\StudyMakesMeHappy\MicroCalculator\bin\Debug\Calculator.pdb
+C:\Users\Administrator\Source\Repos\tlslttlslt\StudyMakesMeHappy\MicroCalculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\Users\Administrator\Source\Repos\tlslttlslt\StudyMakesMeHappy\MicroCalculator\obj\Debug\MicroCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\tlslttlslt\StudyMakesMeHappy\MicroCalculator\obj\Debug\Calculator.exe.manifest
+C:\Users\Administrator\Source\Repos\tlslttlslt\StudyMakesMeHappy\MicroCalculator\obj\Debug\Calculator.application
