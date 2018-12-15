@@ -1,8 +1,0 @@
-C:\Users\asus\source\repos\tlslttlslt\StudyMakesMeHappy\CmnClsLib_DB\bin\Debug\netstandard2.0\CmnClsLib_DB.deps.json
-C:\Users\asus\source\repos\tlslttlslt\StudyMakesMeHappy\CmnClsLib_DB\bin\Debug\netstandard2.0\CmnClsLib_DB.dll
-C:\Users\asus\source\repos\tlslttlslt\StudyMakesMeHappy\CmnClsLib_DB\bin\Debug\netstandard2.0\CmnClsLib_DB.pdb
-C:\Users\asus\source\repos\tlslttlslt\StudyMakesMeHappy\CmnClsLib_DB\obj\Debug\netstandard2.0\CmnClsLib_DB.vbproj.CoreCompileInputs.cache
-C:\Users\asus\source\repos\tlslttlslt\StudyMakesMeHappy\CmnClsLib_DB\obj\Debug\netstandard2.0\CmnClsLib_DB.AssemblyInfoInputs.cache
-C:\Users\asus\source\repos\tlslttlslt\StudyMakesMeHappy\CmnClsLib_DB\obj\Debug\netstandard2.0\CmnClsLib_DB.AssemblyInfo.vb
-C:\Users\asus\source\repos\tlslttlslt\StudyMakesMeHappy\CmnClsLib_DB\obj\Debug\netstandard2.0\CmnClsLib_DB.dll
-C:\Users\asus\source\repos\tlslttlslt\StudyMakesMeHappy\CmnClsLib_DB\obj\Debug\netstandard2.0\CmnClsLib_DB.pdb
