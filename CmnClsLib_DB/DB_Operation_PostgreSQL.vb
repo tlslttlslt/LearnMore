@@ -1,3 +1,9 @@
-﻿Public Class DB_Operation_PostgreSQL
+﻿Namespace CmnClsLib_DB
 
-End Class
+    Public Class DB_Operation_PostgreSQL
+
+    End Class
+
+
+End Namespace
+
