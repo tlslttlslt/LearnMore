@@ -75,5 +75,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CmnClsLib_DB\CmnClsLib_DB.vbproj">
+      <Project>{9e9b6d4d-7fb5-4e24-b2ae-88dc67464eee}</Project>
+      <Name>CmnClsLib_DB</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
