@@ -63,7 +63,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.vb" />
+    <Compile Include="DB_Operation_SQLServer.vb" />
     <Compile Include="DB_Operation_ORCL.vb" />
     <Compile Include="DB_Operation_PostgreSQL.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
