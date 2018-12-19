@@ -2,4 +2,30 @@
 # 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
 ################################################################################
 
-/.vs/StudyMakesMeHappy/v15
+/.vs/
+
+/.git/
+
+/BookManagement/bin/
+/BookManagement/obj/
+
+/CmnClsLib_Cnstnt/bin/
+/CmnClsLib_Cnstnt/obj/
+
+/CmnClsLib_DB/bin/
+/CmnClsLib_DB/obj/
+
+/CmnClsLib_Func/bin/
+/CmnClsLib_Func/obj/
+
+/DataMngLayer/bin/
+/DataMngLayer/obj/
+
+/LearningC/bin/
+/LearningC/obj/
+
+/MicroCalculator/bin/
+/MicroCalculator/obj/
+
+/SimpleCalculator/bin/
+/SimpleCalculator/obj/
