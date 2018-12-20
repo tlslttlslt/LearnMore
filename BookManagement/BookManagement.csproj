@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -53,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -80,7 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CmnClsLib_DB\CmnClsLib_DB.vbproj">
-      <Project>{9e9b6d4d-7fb5-4e24-b2ae-88dc67464eee}</Project>
+      <Project>{14bf2e13-2059-4d4c-a419-98708751e58f}</Project>
       <Name>CmnClsLib_DB</Name>
     </ProjectReference>
   </ItemGroup>
