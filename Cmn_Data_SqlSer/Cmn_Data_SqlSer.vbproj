@@ -4,21 +4,21 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{14BF2E13-2059-4D4C-A419-98708751E58F}</ProjectGuid>
+    <ProjectGuid>{39700A82-7787-42EF-82D6-9DDF10347AE3}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>CmnClsLib_DB</RootNamespace>
-    <AssemblyName>CmnClsLib_DB</AssemblyName>
+    <RootNamespace>Cmn_Data_SqlSer</RootNamespace>
+    <AssemblyName>Cmn_Data_SqlSer</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>CmnClsLib_DB.xml</DocumentationFile>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DocumentationFile>Cmn_Data_SqlSer.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -26,8 +26,8 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>CmnClsLib_DB.xml</DocumentationFile>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DocumentationFile>Cmn_Data_SqlSer.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -43,14 +43,6 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>DLLPostgre\Mono.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="Npgsql, Version=2.2.3.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>DLLPostgre\Npgsql.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -72,8 +64,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DB_Oper_SqlSer.vb" />
-    <Compile Include="DB_Oper_ORCL.vb" />
-    <Compile Include="DB_Oper_Pg.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -108,10 +98,6 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="DLLPostgre\Mono.Security.dll" />
-    <Content Include="DLLPostgre\Npgsql.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -83,9 +83,9 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CmnClsLib_DB\CmnClsLib_DB.vbproj">
+    <ProjectReference Include="..\CmnClsLib_DB\Cmn_Data_Pg.vbproj">
       <Project>{14bf2e13-2059-4d4c-a419-98708751e58f}</Project>
-      <Name>CmnClsLib_DB</Name>
+      <Name>Cmn_Data_Pg</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,22 +4,21 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9F3BF812-0166-4020-851F-8F44E345126E}</ProjectGuid>
+    <ProjectGuid>{F15B9F05-2119-4EED-9A6B-E9687A6A06FB}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>CmnClsLib_Func</RootNamespace>
-    <AssemblyName>CmnClsLib_Func</AssemblyName>
+    <RootNamespace>Cmn_Data_ORA</RootNamespace>
+    <AssemblyName>Cmn_Data_ORA</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>..\bin\Debug\</OutputPath>
-    <DocumentationFile>CmnClsLib_Func.xml</DocumentationFile>
+    <OutputPath>..\Bin\Debug\</OutputPath>
+    <DocumentationFile>Cmn_Data_ORA.xml</DocumentationFile>
     <NoWarn>
     </NoWarn>
     <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
@@ -29,8 +28,8 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
-    <OutputPath>..\bin\Release\</OutputPath>
-    <DocumentationFile>CmnClsLib_Func.xml</DocumentationFile>
+    <OutputPath>..\Bin\Release\</OutputPath>
+    <DocumentationFile>Cmn_Data_ORA.xml</DocumentationFile>
     <NoWarn>
     </NoWarn>
     <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
@@ -50,9 +49,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Windows" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -71,7 +67,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TextOperation.vb" />
+    <Compile Include="DB_Oper_Ora.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -106,9 +102,6 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="TextOperation.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
