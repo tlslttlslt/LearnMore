@@ -23,6 +23,29 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Cmn_Data_Ora", "Cmn_Data_OR
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Cmn_Data_SqlSer", "Cmn_Data_SqlSer\Cmn_Data_SqlSer.vbproj", "{39700A82-7787-42EF-82D6-9DDF10347AE3}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "YuChen", "YuChen\", "{C6DE48A2-BB53-4F8C-BF49-D97C9894965C}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{14bf2e13-2059-4d4c-a419-98708751e58f}|Cmn_Data_Pg.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_10823"
+		Debug.AspNetCompiler.PhysicalPath = "YuChen\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_10823\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_10823"
+		Release.AspNetCompiler.PhysicalPath = "YuChen\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_10823\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "10823"
+		SlnRelativePath = "YuChen\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,6 +174,18 @@ Global
 		{39700A82-7787-42EF-82D6-9DDF10347AE3}.Release|x64.Build.0 = Release|Any CPU
 		{39700A82-7787-42EF-82D6-9DDF10347AE3}.Release|x86.ActiveCfg = Release|Any CPU
 		{39700A82-7787-42EF-82D6-9DDF10347AE3}.Release|x86.Build.0 = Release|Any CPU
+		{C6DE48A2-BB53-4F8C-BF49-D97C9894965C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6DE48A2-BB53-4F8C-BF49-D97C9894965C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6DE48A2-BB53-4F8C-BF49-D97C9894965C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C6DE48A2-BB53-4F8C-BF49-D97C9894965C}.Debug|x64.Build.0 = Debug|Any CPU
+		{C6DE48A2-BB53-4F8C-BF49-D97C9894965C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C6DE48A2-BB53-4F8C-BF49-D97C9894965C}.Debug|x86.Build.0 = Debug|Any CPU
+		{C6DE48A2-BB53-4F8C-BF49-D97C9894965C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6DE48A2-BB53-4F8C-BF49-D97C9894965C}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{C6DE48A2-BB53-4F8C-BF49-D97C9894965C}.Release|x64.ActiveCfg = Debug|Any CPU
+		{C6DE48A2-BB53-4F8C-BF49-D97C9894965C}.Release|x64.Build.0 = Debug|Any CPU
+		{C6DE48A2-BB53-4F8C-BF49-D97C9894965C}.Release|x86.ActiveCfg = Debug|Any CPU
+		{C6DE48A2-BB53-4F8C-BF49-D97C9894965C}.Release|x86.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,2 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPageUser.master" AutoEventWireup="true" CodeFile="Login_Register_Done.aspx.cs" Inherits="Login_Register_Done" Title="登录成功" %>
+<%@ MasterType VirtualPath="~/MasterPageUser.master"%>

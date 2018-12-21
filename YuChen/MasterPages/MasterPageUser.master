@@ -1,0 +1,236 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageUser.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>MasterPageUser</title>
+</head>
+<body>
+<center>
+    <form id="form1" runat="server">
+    <div style="background-image: url(image/background.gif); background-color: #ffffff">
+        &nbsp;<table style="padding-right: 0px; padding-left: 0px; left: 0px; padding-bottom: 0px;
+            margin: 0px; vertical-align: top; width: 0px; clip: rect(0px 0px 0px 0px); direction: ltr;
+            border-top-style: none; text-indent: 1px; line-height: normal; padding-top: 0px;
+            border-right-style: none; border-left-style: none; letter-spacing: normal; position: relative;
+            top: 0px; height: 0px; text-align: center; border-bottom-style: none; z-index: 101;" width="1000">
+            <tr>
+                <td align="center" colspan="3" style="background-image: none; width: 326px; background-color: #ffffff; height: 379px; text-align: left;" valign="top">
+                    <asp:ContentPlaceHolder ID="ConPlcHld_Logo" runat="server">
+                        <asp:Image ID="imgLogo" runat="server" ImageUrl="~/image/logo.jpg" /></asp:ContentPlaceHolder>
+                    <table style="width: 552px; height: 1px">
+                        <tr>
+                            <td style="width: 46px; height: 20px;">
+                                <a href="Default.aspx">首页</a></td>
+                            <td style="width: 47px; height: 20px;">
+                                <a href="register.aspx">注册</a></td>
+                            <td style="width: 165px; height: 20px; text-align: center;">
+                                <a href="modify.aspx">用户信息修改</a></td>
+                            <td style="width: 65px; height: 20px;">
+                                <span style="color: #0000ff; text-decoration: underline"><a href="consult.aspx">咨询</a></span></td>
+                            <td style="width: 100px; height: 20px; text-align: center;">
+                                <a href="consultResult.aspx">我的咨询</a></td>
+                            <td style="width: 63px; height: 20px; text-align: center;">
+                                <span style="color: #0000ff; text-decoration: underline"><a href="fertilizer.aspx">肥料</a></span></td>
+                            <td style="width: 68px; height: 20px; text-align: center;">
+                                <span style="color: #0000ff; text-decoration: underline"><a href="dye.aspx">染料</a></span><a href="fertilizer.aspx"></a></td>
+                            <td style="width: 72px; height: 20px; text-align: center;">
+                                <a href="management.aspx">管理</a><a href="dye.aspx"></a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" rowspan="2" style="width: 118px; background-color: #ffffff; background-image: none;"
+                    valign="top">
+                    &nbsp;<br />
+                    <asp:ContentPlaceHolder ID="ConPlcHld_LeftUp" runat="server">
+                        <asp:Panel ID="pnlLogin" runat="server" Height="160px" Width="200px">
+                            <br />
+                            <br />
+                            <br />
+                        <table>
+                            <tr>
+                                <td colspan="3" style="text-align: center">
+                                    <strong>登 录</strong></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 80px; text-align: right">
+                                    用户名：</td>
+                                <td colspan="2">
+                                    <asp:TextBox ID="txtUserName" runat="server" Width="112px"></asp:TextBox></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: right">
+                                    密码：</td>
+                                <td colspan="2">
+                                    <asp:TextBox ID="txtUserPassword" runat="server" Width="112px" TextMode="Password"></asp:TextBox></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="text-align: center">
+                                    <asp:LinkButton ID="lnkBtnLogin" runat="server" BorderStyle="Outset" Font-Underline="False"
+                                        ForeColor="ActiveCaption" OnClick="lnkBtnLogin_Click" CausesValidation="False">登录</asp:LinkButton><asp:LinkButton
+                                            ID="LnkBtnRegister" runat="server" BorderStyle="Outset" Font-Underline="False"
+                                            ForeColor="ActiveCaption" PostBackUrl="~/register.aspx" CausesValidation="False">注册</asp:LinkButton></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="height: 28px; text-align: center">
+                                    <asp:Label ID="lblErrorMessage" runat="server" ForeColor="Red" Width="24px"></asp:Label></td>
+                            </tr>
+                        </table>
+                        </asp:Panel>
+                        <asp:Panel ID="pnlLoginDone" runat="server" Height="152px" Width="200px">
+                                    <table>
+                                        <tr>
+                                            <td colspan="2" style="width: 194px; text-align: center;">
+                                                <strong>
+                                                欢迎您</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="width: 194px; text-align: center;">
+                                                <asp:Label ID="lblUserName" runat="server" Width="100px"></asp:Label></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="width: 150px; height: 20px; text-align: center;">
+                                                您可以<asp:Button ID="btnLogoff" runat="server" OnClick="btnLogoff_Click" Text="退出登录" CausesValidation="False" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="width: 194px; text-align: center;">
+                                                <asp:LinkButton ID="lnkBtnModify" runat="server" Font-Underline="False" PostBackUrl="~/modify.aspx" ForeColor="Blue" CausesValidation="False">修改个人信息</asp:LinkButton><br />
+                                                <asp:LinkButton ID="lnkBtnConsult" runat="server" Font-Underline="False" ForeColor="Blue"
+                                                    PostBackUrl="~/consult.aspx" CausesValidation="False">咨询</asp:LinkButton><br />
+                                                <asp:LinkButton ID="lnkBtnConsultResult" runat="server" Font-Underline="False" PostBackUrl="consultResult.aspx" CausesValidation="False">查看我的咨询</asp:LinkButton><br />
+                                                <asp:LinkButton ID="lnkBtnToManagement" runat="server" Font-Underline="False" PostBackUrl="~/management.aspx" CausesValidation="False">转到管理界面</asp:LinkButton><a href="consultResult.aspx"></a></td>
+                                        </tr>
+                                    </table>
+                                </asp:Panel>
+                        <table style="text-align: right">
+                            <tr>
+                                <td colspan="4" style="text-align: center">
+                                    <strong>
+                        信息查询&nbsp; </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="height: 20px; text-align: left">
+                        <asp:TextBox ID="txtKeyword" runat="server" Width="120px" ValidationGroup="inforSearch"></asp:TextBox>
+                        <asp:Button ID="btnSearchSubmit" runat="server" Text="查询" OnClick="btnSearchSubmit_Click" ValidationGroup="inforSearch" /><br />
+                                    <asp:RequiredFieldValidator ID="reqrdFldVltdrSearchKeyword" runat="server" ControlToValidate="txtKeyword"
+                                        ErrorMessage="请输入查询关键字" Width="128px" ValidationGroup="inforSearch"></asp:RequiredFieldValidator></td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" style="height: 22px; text-align: right">
+                                    <asp:RadioButton ID="radBtnGoodsDye" runat="server" Width="72px" GroupName="radBtnGoods" Text="染料" Checked="True" ValidationGroup="inforSearch" TextAlign="Left" /></td>
+                                <td colspan="3" style="text-align: right; height: 22px;">
+                                    &nbsp;<asp:RadioButton ID="radBtnGoodsFertilizer" runat="server" GroupName="radBtnGoods" Text="肥料" Width="64px" ValidationGroup="inforSearch" TextAlign="Left" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" style="text-align: right">
+                                    <asp:RadioButton ID="radBtnInfor" runat="server" GroupName="radBtnInforSort" Text="产品信息" Width="104px" Checked="True" ValidationGroup="inforSearch" TextAlign="Left" /></td>
+                                <td colspan="3" style="text-align: right">
+                                    &nbsp;<asp:RadioButton ID="radBtnConsult" runat="server" GroupName="radBtnInforSort" Text="咨询信息" Width="88px" ValidationGroup="inforSearch" TextAlign="Left" /></td>
+                            </tr>
+                        </table>
+                    </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="ConPlcHld_LeftMid" runat="server">
+                    <br />
+                        <asp:GridView ID="grdViwLinks" runat="server" AutoGenerateColumns="False" Height="16px" Width="168px" BackColor="White" BorderColor="White" BorderStyle="Ridge" BorderWidth="2px" CellPadding="3" CellSpacing="1" GridLines="None">
+                            <Columns>
+                                <asp:TemplateField HeaderText="&lt;center&gt;友情链接&lt;/center&gt;">
+                                    <ItemTemplate>
+                                        &nbsp;<asp:LinkButton ID="lnkBtnLinks" runat="server" CommandArgument='<%# Bind("linkURL") %>'
+                                            OnClick="lnkBtnLinks_Click" Text='<%# Bind("linkName") %>' CausesValidation="False"></asp:LinkButton>
+                                    </ItemTemplate>
+                                    <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                                </asp:TemplateField>
+                            </Columns>
+                            <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
+                            <RowStyle BackColor="#DEDFDE" ForeColor="Black" />
+                            <SelectedRowStyle BackColor="#9471DE" Font-Bold="True" ForeColor="White" />
+                            <PagerStyle BackColor="#C6C3C6" ForeColor="Black" HorizontalAlign="Right" />
+                            <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#E7E7FF" />
+                        </asp:GridView>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>&nbsp;</strong></asp:ContentPlaceHolder>
+                    &nbsp;
+                </td>
+                <td align="center" rowspan="2" style="width: 326px; background-color: #ffffff; border-top-width: thick; border-left-width: thick; background-image: none; border-bottom-width: thick; border-right-width: thick;" valign="top">
+                    <br />
+                    <asp:ContentPlaceHolder ID="ConPlcHld_Center" runat="server">
+                        <table>
+                            <tr>
+                                <th align="center" colspan="3" style="width: 689px; height: 43px" valign="top">
+                                    <asp:Label ID="lblNewsTitle" runat="server" Height="40px" Width="264px" Font-Size="X-Large"></asp:Label>
+                                    <br />
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp; &nbsp;
+                                    <asp:Label ID="lblNewsDate" runat="server" Height="24px" Width="136px"></asp:Label></th>
+                            </tr>
+                            <tr>
+                                <th align="center" colspan="3" style="width: 689px; text-align: center;" valign="top" rowspan="2">
+                                    <asp:TextBox ID="txtNewsContent" runat="server" Height="472px" TextMode="MultiLine" Width="536px" ReadOnly="True" BorderStyle="None">欢迎访问我公司网站，请点击右面的新闻标题。</asp:TextBox>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                                </th>
+                            </tr>
+                            <tr>
+                            </tr>
+                        </table>
+                    </asp:ContentPlaceHolder>
+                    &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp;
+                </td>
+                <td align="center" style="width: 326px; background-image: none; background-color: #ffffff;" valign="top" rowspan="2">
+                    <br />
+                    <br />
+                    <asp:ContentPlaceHolder ID="ConPlcHld_RightUp" runat="server">
+                        <br />
+                        <br />
+                        <br />
+                        <asp:GridView ID="grdViwNews" runat="server" AutoGenerateColumns="False" Height="184px" Width="144px" BackColor="White" BorderColor="White" BorderStyle="Ridge" BorderWidth="2px" CellPadding="3" CellSpacing="1" GridLines="None">
+                            <Columns>
+                                <asp:TemplateField HeaderText="新闻动态">
+                                    <ItemTemplate>
+                                        <asp:LinkButton ID="lnkBtnNewsTitle" runat="server" OnClick="lnkBtnNewsTitle_Click"
+                                            Text='<%# Bind("newsTitle") %>' CausesValidation="False"></asp:LinkButton>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                            </Columns>
+                            <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
+                            <RowStyle BackColor="#DEDFDE" ForeColor="Black" />
+                            <SelectedRowStyle BackColor="#9471DE" Font-Bold="True" ForeColor="White" />
+                            <PagerStyle BackColor="#C6C3C6" ForeColor="Black" HorizontalAlign="Right" />
+                            <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#E7E7FF" />
+                        </asp:GridView>
+
+                    </asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="ConPlcHld_RightMid" runat="server">
+                        <br />
+                        商品介绍<br />
+                        <br />
+                        <a href="fertilizer.aspx">青牛液体有机肥</a><br />
+                        <br />
+                        <a href="dye.aspx">印花染料</a></asp:ContentPlaceHolder>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td align="center" colspan="3" style="background-image: none; width: 326px; background-color: #ffffff; text-align: center;" valign="top">
+                    <asp:ContentPlaceHolder ID="ConPlcHld_Copyright" runat="server">
+                        <span style="font-size: 9pt; color: #00ff99">大连交通大学软件学院2008毕业设计</span></asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+  </center>
+
+</body>
+</html>

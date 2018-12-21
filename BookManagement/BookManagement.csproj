@@ -83,7 +83,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CmnClsLib_DB\Cmn_Data_Pg.vbproj">
+    <ProjectReference Include="..\Cmn_Data_Pg\Cmn_Data_Pg.vbproj">
       <Project>{14bf2e13-2059-4d4c-a419-98708751e58f}</Project>
       <Name>Cmn_Data_Pg</Name>
     </ProjectReference>

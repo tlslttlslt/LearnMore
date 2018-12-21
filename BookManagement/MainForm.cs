@@ -29,9 +29,7 @@ namespace BooKManagement
         {
 
             DB_Oper_Pg pgOper = new DB_Oper_Pg();
-            pgOper.PgConn_Open(pstgrConnString);
-
-
+            pgOper.CnnOpen(pstgrConnString);
         }
     }
 }

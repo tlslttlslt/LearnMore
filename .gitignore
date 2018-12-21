@@ -5,14 +5,22 @@
 /.vs/
 /.git/
 
+/Bin/
+
 /BookManagement/bin/
 /BookManagement/obj/
 
+/Cmn_Data_Ora/bin/
+/Cmn_Data_Ora/obj/
+
+/Cmn_Data_Pg/bin/
+/Cmn_Data_Pg/obj/
+
+/Cmn_Data_SqlSer/bin/
+/Cmn_Data_SqlSer/obj/
+
 /CmnClsLib_Cnstnt/bin/
 /CmnClsLib_Cnstnt/obj/
-
-/CmnClsLib_DB/bin/
-/CmnClsLib_DB/obj/
 
 /CmnClsLib_Func/bin/
 /CmnClsLib_Func/obj/
@@ -26,5 +34,10 @@
 /MicroCalculator/bin/
 /MicroCalculator/obj/
 
+/packages/
+
 /SimpleCalculator/bin/
 /SimpleCalculator/obj/
+
+/YuChen/bin/
+/YuChen/obj/
